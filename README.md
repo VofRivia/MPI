@@ -30,10 +30,10 @@ This project simulates heat transfer across a 2D sheet using the finite differen
 
 ```bash
 # Basic compilation
-mpicc -o heat_sim heat_vis_test.c -lglfw -lGL -lm -ldl
+mpicc -o heat_sim heat_vis_test.c -I./include -lglfw -lGL -lm -ldl
 
 # With optimization
-mpicc -O3 -o heat_sim heat_vis_test.c -lglfw -lGL -lm -ldl
+mpicc -O3 -o heat_sim heat_vis_test.c -I./include -lglfw -lGL -lm -ldl
 ```
 
 ## Usage
