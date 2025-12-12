@@ -400,9 +400,12 @@ int main(int argc, char** argv) {
 
     // Check if visualization is requested (pass --visualize flag)
     int visualize = 0;
-    if (argc > 1 && strcmp(argv[1], "--visualize") == 0) {
-        visualize = 1;
+    int user_visualize = 0;
+        if (argc > 1 && strcmp(argv[1], "--visualize") == 0) {
+        user_visualize = 1;
     }
+    int visualize = (world_rank == 0 && user_visualize);
+
 
     data_type **sheet, **sheet_part, **part_1, **part_2, **part_3, **part_4, *vec_part, *vec_1, *vec_2, *vec_3, *vec_4;
     int part = ((N + 2)/2) + 1;
