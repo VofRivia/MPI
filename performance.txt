@@ -1,0 +1,58 @@
+WITH VIS
+
+N = 14 :
+
+RANK 2: total=0.471863  compute=0.000074  comm=0.014738  vis=0.329840
+RANK 0: total=0.471876  compute=0.000086  comm=0.020060  vis=0.385391
+RANK 1: total=0.471882  compute=0.000078  comm=0.016244  vis=0.333690
+RANK 3: total=0.471882  compute=0.000074  comm=0.006045  vis=0.283458
+
+===== GLOBAL PERFORMANCE =====
+Total Time      : 0.471882 s
+Compute Time    : 0.000086 s
+Communication   : 0.020060 s
+Visualization   : 0.385391 s
+
+///////////////////////////////////////////////////////////////////////
+
+N = 100 :
+
+RANK 0: total=6.291297  compute=0.015279  comm=0.326499  vis=4.359266
+RANK 1: total=6.291252  compute=0.020303  comm=0.106458  vis=4.314257
+RANK 2: total=6.291258  compute=0.021220  comm=0.122192  vis=4.554244
+RANK 3: total=6.291220  compute=0.022927  comm=0.205870  vis=3.635341
+
+===== GLOBAL PERFORMANCE =====
+Total Time      : 6.291297 s
+Compute Time    : 0.022927 s
+Communication   : 0.326499 s
+Visualization   : 4.554244 s
+
+///////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+NO VIS
+
+N = 14 :
+
+RANK 0: total=0.005169  compute=0.000034  comm=0.000384  vis=0.000002
+RANK 1: total=0.005148  compute=0.000033  comm=0.000156  vis=0.000003
+RANK 2: total=0.005169  compute=0.000034  comm=0.000316  vis=0.000002
+RANK 3: total=0.005083  compute=0.000034  comm=0.000264  vis=0.000003
+
+
+===== GLOBAL PERFORMANCE =====
+Total Time      : 0.005169 s
+Compute Time    : 0.000034 s
+Communication   : 0.000384 s
+
+N = 100 :
+
+RANK 2: total=0.027868  compute=0.013309  comm=0.000478  vis=0.000017
+RANK 3: total=0.027864  compute=0.012871  comm=0.001823  vis=0.000015
+RANK 1: total=0.027865  compute=0.012715  comm=0.000556  vis=0.000017
+RANK 0: total=0.027860  compute=0.009708  comm=0.001977  vis=0.000019
+
+===== GLOBAL PERFORMANCE =====
+Total Time      : 0.027868 s
+Compute Time    : 0.013309 s
+Communication   : 0.001977 s
